@@ -10,3 +10,21 @@
   # do not pass files as we need to scan the directory with the MANIFEST.in
   pass_filenames: false
   always_run: true
+
+- id: terramate-fmt
+  name: Format Terramate config
+  description: This hook runs 'terramate fmt'
+  entry: terramate fmt
+  language: system
+  # do not pass files this command is effective on the whole repo
+  pass_filenames: false
+  always_run: true
+
+- id: terramate-generate
+  name: Generate Terraform config
+  description: This hook runs 'terramate generate'
+  entry: terramate generate
+  language: system
+  # do not pass files this command is effective on the whole repo
+  pass_filenames: false
+  always_run: true
