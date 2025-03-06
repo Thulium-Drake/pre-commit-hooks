@@ -1,6 +1,14 @@
 ---
 # For use with pre-commit.
 # See usage instructions at http://pre-commit.com
+- id: ansible-sign-config
+  name: Setup ansible-sign
+  description: This hook ensures the configuration of ansible-sign
+  entry: pre_commit_hooks/ensure_ansible_sign_config.sh
+  language: system
+  types: [shell]
+  pass_filenames: false
+  always_run: true
 
 - id: ansible-sign
   name: Verify Ansible-sign signature
