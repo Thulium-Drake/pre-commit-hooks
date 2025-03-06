@@ -2,11 +2,10 @@
 # For use with pre-commit.
 # See usage instructions at http://pre-commit.com
 - id: ansible-sign-config
-  name: Setup ansible-sign
+  name: Ensure ansible-sign config
   description: This hook ensures the configuration of ansible-sign
   entry: ensure_ansible_sign_config
-  language: system
-  types: [shell]
+  language: python
   pass_filenames: false
   always_run: true
 
