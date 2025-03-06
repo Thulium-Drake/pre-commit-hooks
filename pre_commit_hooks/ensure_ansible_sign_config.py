@@ -1,4 +1,3 @@
-#!/bin/env python3
 import os
 
 def ensure_ansible_sign_manifest():
