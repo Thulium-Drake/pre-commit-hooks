@@ -3,8 +3,7 @@ import os
 def ensure_ansible_sign_manifest():
     if not os.path.isfile("MANIFEST.in"):
         with open("MANIFEST.in", "w") as f:
-            f.write("""
-# Include all
+            f.write("""# Include all
 global-include *
 
 # Exclude dynamic or external stuff
