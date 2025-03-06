@@ -4,7 +4,7 @@
 - id: ansible-sign-config
   name: Ensure ansible-sign config
   description: This hook ensures the configuration of ansible-sign
-  entry: ensure_ansible_sign_config
+  entry: ansible-sign-config
   language: python
   pass_filenames: false
   always_run: true
