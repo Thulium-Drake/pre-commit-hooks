@@ -24,13 +24,13 @@ if __name__ == "__main__":
     raise SystemExit(main())
 ```
   * Add the python script to the `pre_commit_hooks` folder, e.g. `my_stuff.py`
-  * Add the script in `setup.cfg
+  * Add the script in `setup.cfg`
 ```
 [options.entry_points]
 console_scripts =
     my-stuff = pre_commit_hooks.my_stuff:main
 ```
-  * Add the hook config in `.pre-commit-hooks.yaml'
+  * Add the hook config in `.pre-commit-hooks.yaml`
 ```
 - id: my-stuff
   name: Do stuff!
