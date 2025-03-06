@@ -12,5 +12,8 @@ global-exclude *.swp *.pyc
 recursive-exclude .git *
 """)
 
-if __name__ == "__main__":
+def main():
     ensure_ansible_sign_manifest()
+
+if __name__ == "__main__":
+    raise SystemExit(main())
